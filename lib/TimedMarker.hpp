@@ -10,9 +10,8 @@
 namespace TM {
 
 #if __cplusplus < 201103 || (defined(_MSVC_LANG) && _MSVC_LANG < 201103L)
-    #error "Need std::string_view feature compiler"
+    #error "Need C++11 compiler at least !"
 #endif
-
 
     using min = std::ratio<3600>;
     using sec = std::ratio<60>;
@@ -42,12 +41,6 @@ namespace TM {
     if constexpr(std::is_same_v<unit, TM::nano>)    std::strcpy(cUnit, "nano"); \
     std::cout << msg << " " << time.count() << " " << cUnit << endl; \
   }
-
-#define MAX_LEN 128
-
-struct Message{
-    const char arrMsg[MAX_LEN]{0};
-};
 
 }   // end of namespace
 #endif
