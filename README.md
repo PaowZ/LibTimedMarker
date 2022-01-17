@@ -35,7 +35,7 @@ Output:
 Hello World!
  »   intermediate: 174.81 ms
  »      Time exec: 171.69 ms
-----------------------------
+____________________________
  »        Total: 346.59 ms
 
 ## Requirements
