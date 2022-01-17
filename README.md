@@ -5,9 +5,9 @@ Header-only file allowing timing runtime assessments for C++.
 
 ## Use:
 
-START_TIMER(<unit>): Start a time-measured block. <unit> may be TM::nano, TM::micro, TM::milli, TM::sec, TM::min
-LAP(<msg>): Display intermediate timings. <msg> is the displayed message.
-END_TIMER(<msg>): Display last timer and total. <msg> is the displayed message.
+START_TIMER(<unit>): Start a time-measured block. <unit> may be TM::nano, TM::micro, TM::milli, TM::sec, TM::min  
+LAP(<msg>): Display intermediate timings. <msg> is the displayed message.  
+END_TIMER(<msg>): Display last timer and total. <msg> is the displayed message.  
 
 ## Example:
 
@@ -32,11 +32,11 @@ int main()
 
 Output:
 
-Hello World!
- »   intermediate: 174.81 ms
- »      Time exec: 171.69 ms
-____________________________
- »        Total: 346.59 ms
+Hello World!  
+ »   intermediate: 174.81 ms  
+ »      Time exec: 171.69 ms  
+____________________________  
+ »        Total: 346.59 ms  
 
 ## Requirements
  - C++17
