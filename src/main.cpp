@@ -2,18 +2,22 @@
 
 #include "TimedMarker.hpp"
 
-using namespace std;
-
 int main()
 {
 
     START_TIMER(TM::milli)
-    cout << "Hello World!" << endl;
+    std::cout << "Hello World!"
+              << std::endl;
 
     for(int i=0,j=0;i<100000000;++i)
         j++;
 
-    END_TIMER("Time exec:")
+    LAP("intermediate")
+
+    for(int i=0,j=0;i<100000000;++i)
+        j++;
+
+    END_TIMER("Time exec")
     return 0;
 }
 
